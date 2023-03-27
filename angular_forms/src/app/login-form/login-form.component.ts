@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginUser } from '../login-user';
 
 @Component({
   selector: 'app-login-form',
@@ -9,5 +10,6 @@ export class LoginFormComponent {
   backend_tech = [
     'Django','Flask','Php','Java','Python'
   ];
+  LoginUser = new LoginUser("hassanfig","jamesBlunt123..");
   
 }
