@@ -2,6 +2,8 @@
     <h1 class="title">Bootcamp Enrollment Form</h1>
     <form #userForm="ngForm">
         {{userForm.value| json}}
+        <hr />
+        {{userModel | json}}
         <div class="form-group mb-3">
             <label>Name</label>
             <input type="text" ngModel name="Name" class="form-control">
