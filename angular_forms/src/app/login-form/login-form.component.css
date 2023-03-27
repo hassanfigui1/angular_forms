@@ -1,4 +1,8 @@
 .container-fluid{
     width: 60%;
-    
+}
+.btn{
+    width: 60%;
+    margin-left: auto;
+    margin-top: auto;
 }

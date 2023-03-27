@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent {
-
+  backend_tech = [
+    'Django','Flask','Php','Java','Python'
+  ];
+  
 }
