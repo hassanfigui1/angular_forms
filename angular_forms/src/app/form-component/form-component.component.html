@@ -6,18 +6,18 @@
         {{userModel | json}}
         <div class="form-group mb-3">
             <label>Name</label>
-            <input type="text" ngModel name="Name" class="form-control">
+            <input type="text" ngModel="userModel.name" name="Name" class="form-control">
         </div>
         <div class="form-group mb-3">
             <label>Email</label>
-            <input type="email" ngModel name="email" class="form-control">
+            <input type="email" ngModel="userModel.email" name="email" class="form-control">
         </div>
         <div class="form-group mb-3">
             <label>Phone</label>
-            <input type="tel" ngModel name="phone" class="form-control">
+            <input type="tel" ngModel="userModel.phone" name="phone" class="form-control">
         </div>
         <div class="form-group mb-3">
-            <select class="custom-select" ngModel name="topic">
+            <select class="custom-select" ngModel="userModel.topic" name="topic">
                 <option selected>I am interested in</option>
                 <option *ngFor="let topic of topics">{{topic}}</option>
             </select>
@@ -25,11 +25,11 @@
         <div class="mb-3">
             <label>Time Preference</label>
             <div class="form-check">
-                <input type="radio" class="form-check-input" ngModel name="timePreference" value="morning" >
+                <input type="radio" class="form-check-input" ngModel="userModel.timePreference" name="timePreference" value="morning" >
                 <label class="form-check-label">Morning (9AM - 12PM)</label>    
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" ngModel name="timePreference" value="evening" >
+                <input type="radio" class="form-check-input" ngModel="userModel.subscribe" name="timePreference" value="evening" >
                 <label class="form-check-label">Evening (5PM - 8PMs)</label>    
             </div>
         </div>
