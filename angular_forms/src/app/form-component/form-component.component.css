@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 768px){
+    .container-fluid{
+        width: 60%;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1008px){
+    .container-fluid{
+        width: 60%;
+    }
+    .title{
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 768px){
+    .container-fluid{
+        width: 50%;
+    }
+  
+}
