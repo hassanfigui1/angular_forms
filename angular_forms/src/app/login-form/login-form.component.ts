@@ -10,6 +10,6 @@ export class LoginFormComponent {
   backend_tech = [
     'Django','Flask','Php','Java','Python'
   ];
-  LoginUser = new LoginUser("hassanfig","jamesBlunt123..");
+  user = new LoginUser("hassanfig","jamesBlunt123..");
   
 }
