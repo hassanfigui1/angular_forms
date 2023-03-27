@@ -11,7 +11,12 @@
         {{name.pristine}}
         <br>
         {{name.valid}}
+        <br>
         {{name.value}}
+
+        <br>
+        <h1>{{name.status}}</h1>
+        
         <div class="form-group mb-3">
             <label>Name</label>
             <input type="text" [(ngModel)]="userModel.name" minlength="3" required #name="ngModel" name="Name" class="form-control">
