@@ -3,15 +3,16 @@
     margin-left: 20%;
     margin-right: 20%;
 }
-.btn-primary{
-    background-color: black;
-    border-radius: 22px;
-}
 
 @media screen and (min-width: 768px){
     .container-fluid{
         width:38%;
     }
+    .btn-primary{
+        background-color: black;
+        border-radius: 22px;
+    }
+    
   
 }
 
@@ -19,6 +20,11 @@
     .container-fluid{
         width: 80%;
     }
+    .btn-primary{
+        background-color: black;
+        border-radius: 22px;
+    }
+    
   
 }
 
