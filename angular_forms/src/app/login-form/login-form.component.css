@@ -10,14 +10,15 @@
 
 @media screen and (min-width: 768px){
     .container-fluid{
-        width: 50%;
+        width:38%;
     }
   
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 368px){
     .container-fluid{
         width: 80%;
     }
   
 }
+
