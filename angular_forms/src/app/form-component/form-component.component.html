@@ -10,7 +10,11 @@
                 </div>
                 <div class="form-group mb-3">
                     <label>Email</label>
-                    <input type="email" pattern="^\S+@\S+\.\S+$" [(ngModel)]="userModel.email" name="email" class="form-control">
+                    <input type="email" pattern="^\S+@\S+\.\S+$" [(ngModel)]="userModel.email" ngModel #email="ngModel" name="email" class="form-control">
+                    <div *ngIf="email.errors && (email.touched || email.invalid)">
+                        <small class="text-danger" [class.d-none]="email.required">Email is required</small>
+                        <small class="text-danger" [class.d-none]="email.invalid">Enter a valid email</small>
+                    </div>
                 </div>
                 <div class="form-group mb-3">
                     <label>Phone</label>
