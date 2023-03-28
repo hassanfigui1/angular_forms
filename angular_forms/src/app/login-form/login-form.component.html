@@ -1,10 +1,14 @@
 <div class="container-fluid mt-4">
     <form #userLogin="ngForm">
         {{userLogin.value | json}}
+        <hr>
+        {{user | json}}
+        <hr>
         <div class="form-group">
             <label for="username mb-3">Username</label>
-            <input type="text" name="usernmae" class="form-control" [(ngModel)]="user.username" />
+            <input type="text" name="username" minlength="3"  [class.is-invalid]="username.invalid" #username="ngModel" class="form-control" [(ngModel)]="user.username" />
         </div>
+        {{username.valid}}
         <div class="form-group mb-3">
             <label for="password">Password</label>
             <input type="password" class="form-control" name="password" [(ngModel)]="user.password">
