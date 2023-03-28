@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./validation-with-visual-feedback.component.css']
 })
 export class ValidationWithVisualFeedbackComponent {
-  private tech:any[] = ['Django','Python','Java','Php','Flask','Angular','Angular'];
+  private tech:any[] = ['Django','Python','Java','Php','Flask','Angular'];
 
 
   getTech(){
