@@ -10,7 +10,11 @@
             <label class="form-label">Phone</label>
             <input type="tel" required minlength="8" #tel="ngModel"
             pattern="^\d{10}$" ngModel [class.is-invalid]="tel.invalid && tel.touched" name="tel" class="form-control">
-            <small [class.d-none]="tel.valid || tel.untouched">phone is required</small>
+            <!-- <small [class.d-none]="tel.valid || tel.untouched">phone number is required and must be 10 digits</small> -->
+            <div *ngIf="tel.errors && (tel.valid || tel.untouched)">
+                <small class="text-danger" *ngIf="tel.errors?.['required'] ">Phone number is required</small>
+                <small class="text-danger" *ngIf="tel.errors?.['pattern'] ">Phone number must be 10 digits</small>
+            </div>
         </div>
         <div class="form-group mb-1">
             <label class="form-label">password</label>
