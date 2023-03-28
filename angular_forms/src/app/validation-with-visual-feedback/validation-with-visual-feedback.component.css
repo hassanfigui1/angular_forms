@@ -1,22 +1,29 @@
-.container-fluid{
-    width:60%;
-}
+
 .title{
     text-align: center;
     margin-top: 5%;
     color:white;
     padding: 5px 0 8px 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(20, 3, 3);
     width: auto;
     margin-bottom:5%;
+  
 }
 .btn-primary{
-    background-color: rgb(58, 79, 141);
+    background-color: rgba(6, 77, 255, 0.9);
     color:rgb(224, 211, 211);
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
 }
-.check{
-    font-size: 12px;
+small{
+    color: rgba(218, 47, 47, 0.957);
+}
+.container-fluid{
+    width:40%;
+}
+form{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }

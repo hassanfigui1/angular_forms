@@ -1,26 +1,26 @@
 <div class="container-fluid mb-5">
     <form #userForm="ngForm">
         <h3 class="title">Sign up</h3>
-        <div class="form-group mb-3">
+        <div class="form-group mb-1">
             <label class="form-label">Username</label>
             <input type="text" #username="ngModel" minlength="3" maxlength="50" ngModel required [class.is-invalid]="username.invalid && username.touched" name="username" class="form-control">
-            <label class="check">{{username.valid}}</label>
+            <small *ngIf="username.invalid && username.touched">username is required </small>
         </div>
-        <div class="form-group mb-3">
+        <div class="form-group mb-1">
             <label class="form-label">Phone</label>
             <input type="tel" required minlength="8" #tel="ngModel"
             pattern="^\d{10}$" ngModel [class.is-invalid]="tel.invalid && tel.touched" name="tel" class="form-control">
-            <label class="check">{{tel.valid}}</label>
+            <small *ngIf="tel.invalid && tel.touched">phone is required</small>
         </div>
-        <div class="form-group mb-3">
+        <div class="form-group mb-1">
             <label class="form-label">password</label>
             <input type="password" #psw="ngModel" minlength="2" ngModel [class.is-invalid]="psw.invalid && psw.touched" required name="psw" class="form-control">
-            <label class="check">{{psw.valid}}</label>
+            <small *ngIf="psw.invalid && psw.touched">The password is required</small>
         </div>
-        <div class="form-group mb-3">
+        <div class="form-group mb-1">
             <label class="form-label">Confirm password</label>
             <input type="password" minlength="2" required #c_psw="ngModel" ngModel [class.is-invalid]="c_psw.invalid && c_psw.touched" name="c_psw" class="form-control">
-            <label class="check">{{c_psw.valid}}</label>
+            <small *ngIf="c_psw.invalid && c_psw.touched">password confirmation is required</small>
         </div>
         <div class="form-group">
             <input type="submit" required  class="form-control btn btn-primary">
