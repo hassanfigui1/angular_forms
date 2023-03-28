@@ -4,23 +4,23 @@
         <div class="form-group mb-1">
             <label class="form-label">Username</label>
             <input type="text" #username="ngModel" minlength="3" maxlength="50" ngModel required [class.is-invalid]="username.invalid && username.touched" name="username" class="form-control">
-            <small *ngIf="username.invalid && username.touched">username is required </small>
+            <small [class.d-none]="username.valid || username.untouched">username is required </small>
         </div>
         <div class="form-group mb-1">
             <label class="form-label">Phone</label>
             <input type="tel" required minlength="8" #tel="ngModel"
             pattern="^\d{10}$" ngModel [class.is-invalid]="tel.invalid && tel.touched" name="tel" class="form-control">
-            <small *ngIf="tel.invalid && tel.touched">phone is required</small>
+            <small [class.d-none]="tel.valid || tel.untouched">phone is required</small>
         </div>
         <div class="form-group mb-1">
             <label class="form-label">password</label>
             <input type="password" #psw="ngModel" minlength="2" ngModel [class.is-invalid]="psw.invalid && psw.touched" required name="psw" class="form-control">
-            <small *ngIf="psw.invalid && psw.touched">The password is required</small>
+            <small [class.d-none]="psw.valid || psw.untouched">The password is required</small>
         </div>
-        <div class="form-group mb-1">
+        <div class="form-group mb-3">
             <label class="form-label">Confirm password</label>
             <input type="password" minlength="2" required #c_psw="ngModel" ngModel [class.is-invalid]="c_psw.invalid && c_psw.touched" name="c_psw" class="form-control">
-            <small *ngIf="c_psw.invalid && c_psw.touched">password confirmation is required</small>
+            <small [class.d-none]="c_psw.valid || c_psw.untouched">password confirmation is required</small>
         </div>
         <div class="form-group">
             <input type="submit" required  class="form-control btn btn-primary">
