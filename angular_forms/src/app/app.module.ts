@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { ValidationWithVisualFeedbackComponent } from './validation-with-visual-feedback/validation-with-visual-feedback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponentComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    ValidationWithVisualFeedbackComponent
   ],
   imports: [
     BrowserModule,
