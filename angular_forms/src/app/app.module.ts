@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ValidationWithVisualFeedbackComponent } from './validation-with-visual-feedback/validation-with-visual-feedback.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponentComponent,
     LoginFormComponent,
-    ValidationWithVisualFeedbackComponent
+    ValidationWithVisualFeedbackComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
