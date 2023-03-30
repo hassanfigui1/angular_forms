@@ -7,6 +7,7 @@ import { FormComponentComponent } from './form-component/form-component.componen
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ValidationWithVisualFeedbackComponent } from './validation-with-visual-feedback/validation-with-visual-feedback.component';
 import { HeaderComponent } from './header/header.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     FormComponentComponent,
     LoginFormComponent,
     ValidationWithVisualFeedbackComponent,
-    HeaderComponent
+    HeaderComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
