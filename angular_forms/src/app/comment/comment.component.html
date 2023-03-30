@@ -1,6 +1,13 @@
-<div class="card">
-    <form #form="ngForm">
-        <input type="text" #comment="ngModel" ngModel name="comment" />
-        <button (click)="addComment()">Add comment</button>
+<div class="container-fluid ">
+    <form #form="ngForm" class="mt-5 mb-5">
+        <input type="text" class="form-control mb-3" #comment="ngModel" [(ngModel)]="comments.comment" name="comment" />
+        <button class="btn btn-primary" (click)="addComment()">Add comment</button>
     </form>
+    <div class="main">
+        <ul class="list">
+            <li *ngFor="let comment of commentList"><label class="label label-info">{{comment.id}}</label> {{comment.comment}}</li>
+        </ul>
+    </div>
+
+
 </div>

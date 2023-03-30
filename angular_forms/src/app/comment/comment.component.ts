@@ -6,12 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./comment.component.css']
 })
 export class CommentComponent {
-  comments : any[]=[
-    { id:0, comment:"That's awesome !" },
-  ];
+  commentList : any[]=[];
+  comments = {id:0, comment: "That's awesome !"};
 
   addComment(){
-    alert("hello");
+    if(this.comments.comment !=""){
+      this.commentList.push({comment: this.comments.comment, id: this.comments.id});
+      this.comments.id += 1;
+    }
+    else{
+      alert("Please fill the comment field !");
+    }
   }
   
 
