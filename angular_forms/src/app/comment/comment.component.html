@@ -4,9 +4,11 @@
         <button class="btn btn-primary" (click)="addComment()">Add comment</button>
     </form>
     <div class="main">
-        <ul class="list">
-            <li *ngFor="let comment of commentList"><label class="label label-info">{{comment.id}}</label> {{comment.comment}}</li>
-        </ul>
+        <div *ngIf="commentList.length>0">
+            <ul class="list">
+                <li *ngFor="let comment of commentList"><label class="label label-info">{{comment.id}}</label> {{comment.comment}}</li>
+            </ul>
+        </div>
     </div>
 
 

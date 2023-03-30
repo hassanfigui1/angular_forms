@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CommentComponent {
   commentList : any[]=[];
-  comments = {id:0, comment: "That's awesome !"};
+  comments = {id:0, comment: ""};
 
   addComment(){
     if(this.comments.comment !=""){
